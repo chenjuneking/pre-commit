@@ -1,0 +1,17 @@
+{
+  "name": "pre-commit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./ --cache --ignore-pattern .gitignore",
+    "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
+  },
+  "pre-commit": [ "precommit-msg", "lint" ],
+  "author": "Jacket Chen <junekingchen@gmail.com> (https://github.com/chenjuneking/file-factory)",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "pre-commit": "^1.2.2"
+  }
+}
